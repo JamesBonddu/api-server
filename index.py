@@ -6,10 +6,11 @@ import json
 import platform
 import datetime
 from utils import data
+from const import *
 
 app = Flask(__name__)
-app.debug = True
-path_prefix= "/wuhan2020"
+app.debug = DEBUG
+path_prefix = HTTP_PREFIX
 # url请求前缀，在http路径中要加/wuhan2020/
 
 if platform.system()=="Linux":
